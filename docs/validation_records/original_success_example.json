@@ -1,0 +1,42 @@
+{
+  "source_image_name": "Ten_015040.png",
+  "input_image": "assets/original_model_success_input.png",
+  "input_sha256": "cb169da39cfaaabbb1f5a99e15a8eb43cf51ffd2951b6e9c254399c7b99c64e5",
+  "output_image": "assets/original_model_success.png",
+  "output_sha256": "c97ba7e2643334acec89e78d1d62d96bd68a0c3af35296d8e6fdd67ccf99b6e7",
+  "checkpoint": "cue_line_extension/checkpoints/checkpoint_epoch_247_best.pth",
+  "checkpoint_sha256": "42e4d7a0f31bddb093f6e0dfa674c28dcf9fb52c37f5b723b3bef0e17cb9ac0f",
+  "pipeline": [
+    "preview.load_model",
+    "preview.infer_single",
+    "preview.postprocess_mask",
+    "preview.save_overlay"
+  ],
+  "settings": {
+    "image_size": [
+      512,
+      512
+    ],
+    "threshold": 0.35,
+    "line_thickness": 6,
+    "min_points": 50,
+    "device": "cuda"
+  },
+  "manual_labels_used_for_prediction": false,
+  "manually_edited_output": false,
+  "selected_from_existing_local_dataset": true,
+  "independent_accuracy_benchmark": false,
+  "selection": {
+    "screened_frames": 160,
+    "existing_masks_used_only_for_candidate_ranking": true,
+    "visually_reviewed": true,
+    "selection_metrics": {
+      "angle_error_deg_against_existing_label": 0.05595291190411357,
+      "mean_label_distance_px_at_512": 0.5793720483779907,
+      "prediction_outlier_pixels": 0,
+      "prediction_axis_concentration": 1.0
+    }
+  },
+  "direct_cli_reproduction_sha256_matches": true,
+  "generation_command_from_cue_line_extension": "python preview.py --checkpoint checkpoints/checkpoint_epoch_247_best.pth --images ../validation_outputs/success_reproduction_input --output ../validation_outputs/success_reproduction_output --device cuda --threshold 0.35 --line-thickness 6"
+}

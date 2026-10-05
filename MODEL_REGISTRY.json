@@ -1439,6 +1439,13 @@
       "bytes": 1286729,
       "sha256": "3af66c95a17fd89df70aa04ef048ea49053f104549811370833449f767689584",
       "source_modified_utc": "2026-05-22T17:04:50.055490+00:00"
+    },
+    {
+      "path": "assets/original_model_success_input.png",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\images\\Ten_015040.png",
+      "bytes": 1583537,
+      "sha256": "cb169da39cfaaabbb1f5a99e15a8eb43cf51ffd2951b6e9c254399c7b99c64e5",
+      "source_modified_utc": "2025-10-08T11:32:15.326738+00:00"
     }
   ],
   "manifest_path_replacements": {
@@ -1465,5 +1472,13 @@
     "original_root_image_mask_overlay_triplets": 4666,
     "full_training_dataset_bundled": false,
     "example_sample": "capture_20251016_101020_000029.png"
-  }
+  },
+  "derived_artifacts": [
+    {
+      "path": "assets/original_model_success.png",
+      "sha256": "c97ba7e2643334acec89e78d1d62d96bd68a0c3af35296d8e6fdd67ccf99b6e7",
+      "provenance": "docs/validation_records/original_success_example.json",
+      "manually_edited": false
+    }
+  ]
 }

@@ -34,10 +34,37 @@ the repository as failure evidence. Compare it with the existing
 [correct manual label](../assets/manual_overlay.png), which contains one straight
 white extended line through the selected guideline.
 
-The README now shows that manual label as the intended output and explicitly
-identifies it as an annotation. This documentation correction does not fix the
-model or its geometric postprocessing. No checkpoint, label file, training code,
-or inference policy was changed.
+The README now shows an actual successful model output from a different frame,
+documented below. The failure remains unresolved. No checkpoint, label file,
+training code, or inference policy was changed.
+
+## Selected successful original model example
+
+The README's **Original model + geometric extension** panel now uses an actual
+epoch-247 prediction on `Ten_015040.png`. Its [input frame](../assets/original_model_success_input.png)
+and [unedited pipeline output](../assets/original_model_success.png) are bundled.
+Visual inspection confirmed one continuous fitted extension following the
+visible short outgoing guideline at the black ball, without the earlier stray
+yellow segments.
+
+This example was selected after running the unchanged model on 160 sampled
+frames from the existing local dataset. Existing masks were used only to rank
+candidate alignment; neither the neural prediction nor `postprocess_mask`
+received a dataset label. The selection is a showcase of a successful case,
+not a held-out evaluation or proof that the original bug is fixed.
+
+The checkpoint and all default settings are preserved: 512 × 512 model input,
+probability threshold 0.35, line thickness 6, and CUDA execution. The output was
+reproduced with the packaged `preview.py` command. Exact source and output
+checksums are in the [example provenance record](validation_records/original_success_example.json).
+
+From `cue_line_extension/`, reproduce it with:
+
+```powershell
+New-Item -ItemType Directory -Force samples/success_input | Out-Null
+Copy-Item ../assets/original_model_success_input.png samples/success_input/
+python preview.py --checkpoint checkpoints/checkpoint_epoch_247_best.pth --images samples/success_input --output samples/success_output --device cuda --threshold 0.35 --line-thickness 6
+```
 
 The new portable wrapper initially supplied strings where the historical
 manifest runtime expected `Path` objects. Its adapter now uses the existing
