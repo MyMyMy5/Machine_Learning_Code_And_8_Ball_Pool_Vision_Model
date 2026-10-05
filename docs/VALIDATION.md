@@ -14,7 +14,7 @@ They are separate from the historical model-quality benchmarks.
 | Promoted policy preservation | PASS — only checkpoint paths changed; all other JSON values match the historical manifest | Source validation mode |
 | Copied regression suite | PASS — 90 tests passed in 43.02 seconds | Existing `object_ball_guideline/tests/` suite |
 | Original checkpoint loading | PASS — epoch 241 best, epoch 247 fine-tuned best, and epoch 250 final load strictly into `ML.UNet` | [Forward-pass records](validation_records/original_forward_passes.json) |
-| Original single-frame inference | PASS — each checkpoint produces a finite 512 × 512 probability mask and a saved overlay on CUDA | Same forward-pass records and displayed example overlay |
+| Original single-frame inference | PASS for runtime execution — each checkpoint produces a finite 512 × 512 probability mask and a saved overlay on CUDA; the epoch-247 example has a known extension bug | Same forward-pass records and known failure below |
 | Later checkpoint loading | PASS — all 16 later checkpoint files, including both external rescue models and rejected v46, load through their packaged runtime loaders | [Loader records](validation_records/later_checkpoint_loads.json) |
 | Full promoted single-frame inference | PASS — v47b writes its mask, overlay and candidate report | [Prediction summary](validation_records/later_prediction_summary.json) |
 | Publication guides and asset links | PASS — checked relative links in the new guides, README pages, and checkpoint catalog | Publication packaging audit |
@@ -22,8 +22,22 @@ They are separate from the historical model-quality benchmarks.
 The later example output has shape **1050 × 1576**, contains **107 nonzero mask
 pixels**, and selects the `external_main_reticle_rescue` branch. The overlay was
 visually reviewed: the short guideline at the purple object ball is highlighted.
-The original extended prediction was also reviewed and retains some additional
-predicted fragments. These observations apply to this example only.
+The original extended prediction has an incorrect geometric extension and stray
+predicted fragments, as identified by the owner. These observations apply to
+this example only; successful execution does not establish visual correctness.
+
+## Known original extension failure
+
+The [original epoch-247 prediction](../assets/original_model_prediction.png)
+contains an incorrect fitted extension and extra yellow segments. It remains in
+the repository as failure evidence. Compare it with the existing
+[correct manual label](../assets/manual_overlay.png), which contains one straight
+white extended line through the selected guideline.
+
+The README now shows that manual label as the intended output and explicitly
+identifies it as an annotation. This documentation correction does not fix the
+model or its geometric postprocessing. No checkpoint, label file, training code,
+or inference policy was changed.
 
 The new portable wrapper initially supplied strings where the historical
 manifest runtime expected `Path` objects. Its adapter now uses the existing

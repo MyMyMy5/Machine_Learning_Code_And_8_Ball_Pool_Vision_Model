@@ -62,17 +62,19 @@ flowchart LR
 
 The extension is geometric postprocessing. It does not simulate collisions, cushions, spin, or the outcome of a shot. Manual labels determine which guideline the original model learns. The later project explicitly treats the cue-ball aiming line, cue stick, forbidden-circle line, and unrelated white UI features as negative material.
 
-### One frame through both systems
+### Correct label and localized model output
 
-These overlays were generated from the included screenshot during publication validation. The original fine-tuned model shows a yellow extended line and retains predicted fragments. The later promoted detector highlights the localized outgoing guideline in green. This is a single-frame execution example, not an independent accuracy benchmark.
+The left panel shows the correct full-line **manual training label**: one straight white extension through the selected short guideline. The right panel shows the later promoted detector's actual localized prediction in green. Both use the same screenshot. The manual label illustrates the intended extension; it is not a model-generated result or evidence that the original model's extension bug has been fixed.
 
 <table>
-  <tr><th>Original model + geometric extension</th><th>Later localized outgoing-guideline detector</th></tr>
+  <tr><th>Correct full-line label (manual annotation)</th><th>Later localized outgoing-guideline detector</th></tr>
   <tr>
-    <td><img src="assets/original_model_prediction.png" alt="Actual epoch-247 prediction and fitted line extension" width="560"></td>
+    <td><img src="assets/manual_overlay.png" alt="Correct manual label with one straight white extension through the selected guideline" width="560"></td>
     <td><img src="assets/outgoing_guideline_prediction.png" alt="Actual v47b localized outgoing-guideline prediction" width="560"></td>
   </tr>
 </table>
+
+The original epoch-247 prediction previously shown here has an incorrect geometric extension and stray yellow segments. It is preserved as a [known failure](docs/VALIDATION.md#known-original-extension-failure), rather than presented as a correct result. The localized prediction is a single-frame execution example, not an independent accuracy benchmark.
 
 ## Get the code and actual weights
 
