@@ -1,0 +1,253 @@
+{
+  "manifest": "runs/reranker_v16_primary_aug/supervised_best_manifest_v47b_roi_expand_selector_probe.json",
+  "gold_board": "runs/reranker_v16_primary_aug/failure_subsets/supplemental_v44d_positive_zero4_gold_board.json",
+  "splits": [
+    "supplemental_v44d_positive_zero4"
+  ],
+  "overall": {
+    "count": 4,
+    "positive_count": 4,
+    "negative_count": 0,
+    "mean_iou": 0.810233918128655,
+    "mean_dice": 0.896265147404594,
+    "positive_mean_iou": 0.810233918128655,
+    "positive_mean_dice": 0.896265147404594,
+    "positive_zero_iou": 0,
+    "true_negative": 0,
+    "negative_false_positive": 0,
+    "negative_false_positive_rate": 0.0,
+    "failure_counts": {
+      "success": 4
+    },
+    "winner_source_counts": {
+      "line_endpoint": 4
+    },
+    "negative_false_positive_source_counts": {},
+    "winner_flag_counts": {
+      "pooled_post_final_candidate_selector_rescue": 4,
+      "post_final_candidate_selector_rescue": 4
+    }
+  },
+  "by_split": {
+    "supplemental_v44d_positive_zero4": {
+      "count": 4,
+      "positive_count": 4,
+      "negative_count": 0,
+      "mean_iou": 0.810233918128655,
+      "mean_dice": 0.896265147404594,
+      "positive_mean_iou": 0.810233918128655,
+      "positive_mean_dice": 0.896265147404594,
+      "positive_zero_iou": 0,
+      "true_negative": 0,
+      "negative_false_positive": 0,
+      "negative_false_positive_rate": 0.0,
+      "failure_counts": {
+        "success": 4
+      },
+      "winner_source_counts": {
+        "line_endpoint": 4
+      },
+      "negative_false_positive_source_counts": {},
+      "winner_flag_counts": {
+        "pooled_post_final_candidate_selector_rescue": 4,
+        "post_final_candidate_selector_rescue": 4
+      }
+    }
+  },
+  "worst25": [
+    {
+      "id": "20260424_151140_e9330dcc",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260424_151140_e9330dcc.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260424_151140_e9330dcc.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260424_151140_e9330dcc",
+      "iou": 0.7631578947368421,
+      "dice": 0.8666666666666667,
+      "gt_pixels": 75,
+      "pred_pixels": 59,
+      "failure_type": "success",
+      "winner_id": "crop_59",
+      "winner_source": "line_endpoint",
+      "winner_score": 0.4974069893360138,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.4406779661016949,
+      "winner_connected_to_ball": 1.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260424_124937_d7951880",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_quarantine_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\quarantine\\images\\20260424_124937_d7951880.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\quarantine\\masks\\20260424_124937_d7951880.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260424_124937_d7951880",
+      "iou": 0.7777777777777778,
+      "dice": 0.8762886597938144,
+      "gt_pixels": 54,
+      "pred_pixels": 42,
+      "failure_type": "success",
+      "winner_id": "crop_17",
+      "winner_source": "line_endpoint",
+      "winner_score": 0.5085601806640625,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.8571428571428571,
+      "winner_connected_to_ball": 1.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260218_161229_8732a64b",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260218_161229_8732a64b.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260218_161229_8732a64b.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260218_161229_8732a64b",
+      "iou": 0.85,
+      "dice": 0.9210526315789473,
+      "gt_pixels": 18,
+      "pred_pixels": 19,
+      "failure_type": "success",
+      "winner_id": "crop_15",
+      "winner_source": "line_endpoint",
+      "winner_score": 1.9280164241790771,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.0,
+      "winner_connected_to_ball": 0.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260218_161232_afd4c0f9",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260218_161232_afd4c0f9.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260218_161232_afd4c0f9.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260218_161232_afd4c0f9",
+      "iou": 0.85,
+      "dice": 0.9210526315789473,
+      "gt_pixels": 18,
+      "pred_pixels": 19,
+      "failure_type": "success",
+      "winner_id": "crop_15",
+      "winner_source": "line_endpoint",
+      "winner_score": 1.9280164241790771,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.0,
+      "winner_connected_to_ball": 0.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "20260424_151140_e9330dcc",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260424_151140_e9330dcc.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260424_151140_e9330dcc.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260424_151140_e9330dcc",
+      "iou": 0.7631578947368421,
+      "dice": 0.8666666666666667,
+      "gt_pixels": 75,
+      "pred_pixels": 59,
+      "failure_type": "success",
+      "winner_id": "crop_59",
+      "winner_source": "line_endpoint",
+      "winner_score": 0.4974069893360138,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.4406779661016949,
+      "winner_connected_to_ball": 1.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260424_124937_d7951880",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_quarantine_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\quarantine\\images\\20260424_124937_d7951880.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\quarantine\\masks\\20260424_124937_d7951880.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260424_124937_d7951880",
+      "iou": 0.7777777777777778,
+      "dice": 0.8762886597938144,
+      "gt_pixels": 54,
+      "pred_pixels": 42,
+      "failure_type": "success",
+      "winner_id": "crop_17",
+      "winner_source": "line_endpoint",
+      "winner_score": 0.5085601806640625,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.8571428571428571,
+      "winner_connected_to_ball": 1.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260218_161229_8732a64b",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260218_161229_8732a64b.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260218_161229_8732a64b.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260218_161229_8732a64b",
+      "iou": 0.85,
+      "dice": 0.9210526315789473,
+      "gt_pixels": 18,
+      "pred_pixels": 19,
+      "failure_type": "success",
+      "winner_id": "crop_15",
+      "winner_source": "line_endpoint",
+      "winner_score": 1.9280164241790771,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.0,
+      "winner_connected_to_ball": 0.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    },
+    {
+      "id": "20260218_161232_afd4c0f9",
+      "split": "supplemental_v44d_positive_zero4",
+      "kind": "positive",
+      "source": "supplemental_positive",
+      "image_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\images\\20260218_161232_afd4c0f9.png",
+      "mask_path": "C:\\My_Project\\SAM_3\\guideline_line\\data_zoomprobe\\masks\\20260218_161232_afd4c0f9.png",
+      "output_dir": "runs/reranker_v16_primary_aug/eval_v47b_roi_expand_selector_probe_positive_zero4/supplemental_v44d_positive_zero4/20260218_161232_afd4c0f9",
+      "iou": 0.85,
+      "dice": 0.9210526315789473,
+      "gt_pixels": 18,
+      "pred_pixels": 19,
+      "failure_type": "success",
+      "winner_id": "crop_15",
+      "winner_source": "line_endpoint",
+      "winner_score": 1.9280164241790771,
+      "winner_validity_score": null,
+      "winner_ball_fill_fraction": 0.0,
+      "winner_connected_to_ball": 0.0,
+      "winner_flags": {
+        "pooled_post_final_candidate_selector_rescue": true,
+        "post_final_candidate_selector_rescue": true
+      }
+    }
+  ]
+}

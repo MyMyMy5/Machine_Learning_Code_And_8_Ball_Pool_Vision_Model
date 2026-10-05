@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snooker-guide-line-segmentation"
+version = "0.1.0"
+description = "Offline zero-shot snooker and pool guide-line segmentation pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "opencv-python>=4.9",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "scikit-image>=0.22",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2"]
+
+[project.scripts]
+guide-line-pipeline = "src.main:main"
+
+[tool.setuptools.packages.find]
+include = ["src", "src.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

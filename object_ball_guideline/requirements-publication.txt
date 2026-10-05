@@ -1,0 +1,4 @@
+-r requirements-train.txt
+scikit-image>=0.22
+timm>=1.0
+transformers>=4.46

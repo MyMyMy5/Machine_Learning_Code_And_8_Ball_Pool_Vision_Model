@@ -1,0 +1,33 @@
+.\.venv\Scripts\python.exe preview.py --checkpoint data/output/checkpoint_epoch_033_best.pth --images samples/val_preview --output samples/preds --device cuda
+
+.\.venv\Scripts\python.exe extract_frames.py C:\My_Project\8_BALL_POOL\samples\Video_Test\Start.mp4 samples/val_preview --stride 5 --max-frames 4000
+
+.\.venv\Scripts\python.exe ML.py data data/output --num-epochs 200 --batch-size 32 --num-workers 12 --lr 6e-4 --pos-weight 3.0 --device cuda
+
+.\.venv\Scripts\python.exe prepare_dataset.py data/raw_videos data/images data/masks --frame-stride 5 --min-line-count 1 --store-overlay
+
+
+
+& .\.venv\Scripts\Activate.ps1
+python review_overlays.py --overlays data/overlays --images data/images --masks data/masks
+
+
+
+(.venv_py313) PS C:\My_Project\8_BALL_POOL> python manual_annotation_tool.py --point-radius 2
+
+(.venv_py313) PS C:\My_Project\8_BALL_POOL> python record_cropped_monitor.py --region-json config/region.json --fps 30 --preview 
+>>
+
+
+(.venv_py313) PS C:\My_Project\8_BALL_POOL> python extract_manual_frames.py --input recordings --output data/manual_edited_images --stride 3 --reset --image-ext .png
+>> 
+
+
+.\.venv\Scripts\python.exe live_inference.py --checkpoint data/output/checkpoint_epoch_241_best.pth --monitor 3 --region 493,231,1576,1051 --device cuda
+.\.venv\Scripts\python.exe live_inference.py --checkpoint data/output/checkpoint_epoch_241_best.pth --region-json config/region.json --device cuda
+
+
+
+(.venv) PS C:\My_Project\8_BALL_POOL> .\.venv\Scripts\python.exe calibrate_region.py --monitor 2 --save-json config/region.json
+
+

@@ -1,0 +1,7 @@
+# Install a matched torch/torchvision build for your device first if needed.
+torch>=2.6
+torchvision>=0.21
+numpy>=1.26
+opencv-python>=4.9
+Pillow>=10
+mss>=10

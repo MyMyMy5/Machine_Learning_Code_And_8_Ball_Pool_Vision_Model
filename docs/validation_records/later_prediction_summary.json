@@ -1,0 +1,11 @@
+{
+  "candidate_name": "v47b_roi_expand_selector_probe",
+  "output_dir": "/mnt/c/My_Project/8_BALL_POOL/github_publication/validation_outputs/later",
+  "pred_pixels": 107,
+  "mask_shape": [
+    1050,
+    1576
+  ],
+  "winner_source": "external_main_reticle_rescue",
+  "mask_path": "/mnt/c/My_Project/8_BALL_POOL/github_publication/validation_outputs/later/mask_final.png"
+}

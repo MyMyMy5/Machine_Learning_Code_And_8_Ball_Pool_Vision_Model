@@ -1,0 +1,82 @@
+[
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v2/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v2/guideline_reranker_best.pt",
+    "loader_completed": true,
+    "type": "LoadedReranker"
+  },
+  {
+    "checkpoint": "object_ball_guideline/external_guideline/runs_cv/ft_after_clean2000_softdistance_v1/best.pt",
+    "loader_completed": true,
+    "type": "SegmentationModel"
+  },
+  {
+    "checkpoint": "object_ball_guideline/external_guideline/runs_cv/ft_balanced_ultratiny_replay_v1/best.pt",
+    "loader_completed": true,
+    "type": "SegmentationModel"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_reranker_best.pt",
+    "loader_completed": true,
+    "type": "LoadedReranker"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_reranker_best.pt",
+    "loader_completed": true,
+    "type": "LoadedReranker"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/final_veto_v3_image_focus/image_veto_global_s42.pt",
+    "loader_completed": true,
+    "type": "GuidelineImageFinalVeto"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supplemental_v7_validation/image_veto_v4_external_reticle/image_veto_v4_global_s42.pt",
+    "loader_completed": true,
+    "type": "GuidelineImageFinalVeto"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v10_repair_lr2e-4_pw18/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_reranker_b.pt",
+    "loader_completed": true,
+    "type": "LoadedReranker"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  },
+  {
+    "checkpoint": "object_ball_guideline/runs/supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx/guideline_unet_best.pt",
+    "loader_completed": true,
+    "type": "GuidelineUNet"
+  }
+]

@@ -1,0 +1,1469 @@
+{
+  "schema_version": 1,
+  "packaged_at_utc": "2026-10-05T11:04:54.702413+00:00",
+  "project_start": {
+    "owner_recollection": "Late 2024",
+    "timestamp_verified": false
+  },
+  "source_roots": [
+    "C:\\My_Project\\8_BALL_POOL",
+    "C:\\My_Project\\Test_New_Approach",
+    "C:\\My_Project\\SAM_3\\guideline_line"
+  ],
+  "promoted_candidate": "v47b_roi_expand_selector_probe",
+  "models": [
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_241_best.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output\\checkpoint_epoch_241_best.pth",
+      "bytes": 131471898,
+      "sha256": "7cb75a3a5897104165f550e96f6faa6071109474e9721f8327a84e73e5b3c223",
+      "source_modified_utc": "2025-10-17T04:10:12.889615+00:00",
+      "role": "Historical best used by recorded live-inference commands"
+    },
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_247_best.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_ft\\checkpoint_epoch_247_best.pth",
+      "bytes": 131472602,
+      "sha256": "42e4d7a0f31bddb093f6e0dfa674c28dcf9fb52c37f5b723b3bef0e17cb9ac0f",
+      "source_modified_utc": "2025-10-17T13:42:59.148194+00:00",
+      "role": "Latest surviving fine-tuned best; minimum recorded fine-tune validation loss"
+    },
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_250_final.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output\\checkpoint_epoch_250_final.pth",
+      "bytes": 131472212,
+      "sha256": "612df0283775705e57875164f3109714c29d7daaeda4d1ef1c8d2f0b39227183",
+      "source_modified_utc": "2025-10-17T04:26:37.286908+00:00",
+      "role": "Final checkpoint of the original 250-epoch run"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_unet_best.pt",
+      "bytes": 31121507,
+      "sha256": "d91db0ee07bb93b33b24f7c811c28a5fae5273f9bbbb717c6b35f11f22659838",
+      "source_modified_utc": "2026-03-27T05:34:45.753861+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_reranker_best.pt",
+      "bytes": 20309,
+      "sha256": "61354d244c782b46869b1bdf681fa9e10025783c62854b173dc19450a683a145",
+      "source_modified_utc": "2026-03-27T16:47:10.563271+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/runs_cv/ft_after_clean2000_softdistance_v1/best.pt",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_after_clean2000_softdistance_v1\\best.pt",
+      "bytes": 101037059,
+      "sha256": "2e14de5a17c1d5a11f2566de4f6528abdcfd25c4d69debd1c90795bd8dceb0d0",
+      "source_modified_utc": "2026-03-06T16:36:02.032955+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/runs_cv/ft_balanced_ultratiny_replay_v1/best.pt",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_balanced_ultratiny_replay_v1\\best.pt",
+      "bytes": 101036995,
+      "sha256": "aef71fc970a8bce61419c3d6734aa6a437f4dc8dddb9aae40df4f16574f7c28b",
+      "source_modified_utc": "2026-03-04T12:24:50.878178+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_unet_best.pt",
+      "bytes": 31122531,
+      "sha256": "c66808f38deb8454e700fd452a5fdb2d029e6105dccd099ebedce129f90830cd",
+      "source_modified_utc": "2026-03-27T21:10:54.879898+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_reranker_best.pt",
+      "bytes": 20437,
+      "sha256": "bf5573d9a03315a3d45df4a5b24af483999bf3def39380b675f1e48be7a3b06b",
+      "source_modified_utc": "2026-03-27T21:28:15.059455+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_unet_best.pt",
+      "bytes": 31125283,
+      "sha256": "3a923238fd07a175970baa2d23cc50da514d2078aef30db21020954d67d84811",
+      "source_modified_utc": "2026-03-28T14:26:28.543737+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_reranker_best.pt",
+      "bytes": 20437,
+      "sha256": "8e1a3cd11d4a22bb6e39b7f229abcdd63501c61296da9e8721bf60f61d90a073",
+      "source_modified_utc": "2026-03-27T23:22:50.660876+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/final_veto_v3_image_focus/image_veto_global_s42.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\final_veto_v3_image_focus\\image_veto_global_s42.pt",
+      "bytes": 1061220,
+      "sha256": "2af9f5f6397450038444ad0f4c2782892b2447f99be4e1885a19eb44e649267e",
+      "source_modified_utc": "2026-04-28T18:53:20.807586+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supplemental_v7_validation/image_veto_v4_external_reticle/image_veto_v4_global_s42.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supplemental_v7_validation\\image_veto_v4_external_reticle\\image_veto_v4_global_s42.pt",
+      "bytes": 1061419,
+      "sha256": "fa70cd5c6a4c6a1a8bdae40591e8cc9b02d6e11478b0217ae2b3d199581167f2",
+      "source_modified_utc": "2026-04-30T00:36:33.429623+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v10_repair_lr2e-4_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v10_repair_lr2e-4_pw18\\guideline_unet_best.pt",
+      "bytes": 31121507,
+      "sha256": "57eeaf4a69f1aac6fbe77e24f005b180b55e0016e0e3f3702ae36d0e3c803a5e",
+      "source_modified_utc": "2026-04-25T01:18:25.381368+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_unet_best.pt",
+      "bytes": 31123491,
+      "sha256": "01c63acdfc44717fcedc77841b12c6ee1153c7c20b13a02c2cb026fe21689138",
+      "source_modified_utc": "2026-03-27T23:01:33.775789+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_reranker_b.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_reranker_b.pt",
+      "bytes": 20337,
+      "sha256": "4a8b8c0ec766c85b2859d6321d8fc465cdf17d5463929bce1b28ef4154027d39",
+      "source_modified_utc": "2026-03-28T14:54:53.213242+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18\\guideline_unet_best.pt",
+      "bytes": 31119843,
+      "sha256": "cf04e8e2b7ffd5ae0433ea7743782282288c38ab7b7b1dddca3e2fdb337e74ed",
+      "source_modified_utc": "2026-04-30T08:38:59.716858+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18\\guideline_unet_best.pt",
+      "bytes": 31150819,
+      "sha256": "3a7b7e98ba7fa3afa64b4c4fcfbcf159728c756ff4f616693f3daa8cc2f0f49f",
+      "source_modified_utc": "2026-05-06T07:31:50.116193+00:00",
+      "role": "Referenced by the promoted v47b manifest"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx\\guideline_unet_best.pt",
+      "bytes": 31120547,
+      "sha256": "229c641834497690113c0335c84227d7100d7354c59aac5e60a8ee264912adf6",
+      "source_modified_utc": "2026-05-22T11:34:25.121079+00:00",
+      "role": "Latest surviving experimental checkpoint; rejected, not promoted"
+    }
+  ],
+  "copied_sources": [
+    {
+      "path": "cue_line_extension/ML.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\ML.py",
+      "bytes": 21501,
+      "sha256": "4e519cfe649c8bcc6eaab0f5325acabece199405bdc6f4048e313c46c76c0004",
+      "source_modified_utc": "2025-10-16T20:12:09.382273+00:00"
+    },
+    {
+      "path": "cue_line_extension/preview.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\preview.py",
+      "bytes": 4241,
+      "sha256": "05b95c60c5113e4ec6b1ab1faf2e83680e70a78c0557c915d18285bc8de94297",
+      "source_modified_utc": "2025-10-06T09:37:25.131981+00:00"
+    },
+    {
+      "path": "cue_line_extension/live_inference.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\live_inference.py",
+      "bytes": 7903,
+      "sha256": "0fae27ec70f533715b167e8d4a3ff4f037dded5cb8c8a49ecd5adbe000e30d1f",
+      "source_modified_utc": "2025-10-17T07:47:41.904170+00:00"
+    },
+    {
+      "path": "cue_line_extension/prepare_dataset.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\prepare_dataset.py",
+      "bytes": 11766,
+      "sha256": "d2632a1ce8e68539219cc8ff364a7e1ce69143135c9b80dfe0614dda6763a3ed",
+      "source_modified_utc": "2025-10-06T14:57:21.342077+00:00"
+    },
+    {
+      "path": "cue_line_extension/manual_annotation_tool.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\manual_annotation_tool.py",
+      "bytes": 10731,
+      "sha256": "91f61ca19b31ecacfac39987e2456b58327763b3f7b2caeaf6d22cb6cdc32072",
+      "source_modified_utc": "2025-10-16T12:10:16.970917+00:00"
+    },
+    {
+      "path": "cue_line_extension/extract_frames.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\extract_frames.py",
+      "bytes": 1823,
+      "sha256": "fe9e376635e1a5aa0251afa6292cdf2e90a69b80089807e45129d8ed625a3fb6",
+      "source_modified_utc": "2025-10-05T21:42:36.440056+00:00"
+    },
+    {
+      "path": "cue_line_extension/extract_manual_frames.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\extract_manual_frames.py",
+      "bytes": 4061,
+      "sha256": "dd66d111540c0e5d2f3529c1977c219b4b56c8a2548b7e2af446669a426e44db",
+      "source_modified_utc": "2025-10-16T11:27:58.576190+00:00"
+    },
+    {
+      "path": "cue_line_extension/record_cropped_monitor.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\record_cropped_monitor.py",
+      "bytes": 5940,
+      "sha256": "4cfae95ef92d575eaa11ce2f492edd978afad3c992f4897a9a72d31b1cb5536b",
+      "source_modified_utc": "2025-10-16T09:45:42.784808+00:00"
+    },
+    {
+      "path": "cue_line_extension/calibrate_region.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\calibrate_region.py",
+      "bytes": 3870,
+      "sha256": "8502bbf2e97a0774bfa4078ac1d9e1306c0f153217b134e4a679bb39d0e13dbc",
+      "source_modified_utc": "2025-10-15T18:34:33.139924+00:00"
+    },
+    {
+      "path": "cue_line_extension/review_overlays.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\review_overlays.py",
+      "bytes": 4127,
+      "sha256": "8237316b8cdfdf33d711b8d84ffaf3e8ea2db750a9f0b0b3a4562e5fd1cfb739",
+      "source_modified_utc": "2025-10-05T02:31:36.170782+00:00"
+    },
+    {
+      "path": "cue_line_extension/experiments/Accurate_Try.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\Accurate_Try.py",
+      "bytes": 2633,
+      "sha256": "55c3c63d6d0afb1f524f1ae891febba14fbb97e1eee05839f9a45083f72946d7",
+      "source_modified_utc": "2025-09-25T11:35:59.060135+00:00"
+    },
+    {
+      "path": "cue_line_extension/experiments/File.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\File.py",
+      "bytes": 10580,
+      "sha256": "0718cfd0e664631c7784b080434107eb0447bd63d1d71a050b9d18c62cc51887",
+      "source_modified_utc": "2025-09-25T12:00:54.485897+00:00"
+    },
+    {
+      "path": "cue_line_extension/experiments/detect_line.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\detect_line.py",
+      "bytes": 6398,
+      "sha256": "12c1e00934ca2b2af353d53fee68ba5cac50b298a37000759a6e97172de401a7",
+      "source_modified_utc": "2025-10-04T18:15:57.399479+00:00"
+    },
+    {
+      "path": "cue_line_extension/experiments/import math.py",
+      "source": "C:\\My_Project\\8_BALL_POOL\\import math.py",
+      "bytes": 7607,
+      "sha256": "3ef080b3e0189b454ba27894eab58dbb14cd14e7efebc4b0af079da2509cede7",
+      "source_modified_utc": "2025-10-07T20:05:36.510019+00:00"
+    },
+    {
+      "path": "cue_line_extension/config/region.example.json",
+      "source": "C:\\My_Project\\8_BALL_POOL\\config\\region.json",
+      "bytes": 88,
+      "sha256": "e06e495199c6199bc6c51a91a601aff3c13f9b8ea022d10ad17c9c6128b412d7",
+      "source_modified_utc": "2025-10-17T07:45:40.899905+00:00"
+    },
+    {
+      "path": "docs/historical_commands.txt",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\Commands.txt",
+      "bytes": 1585,
+      "sha256": "cbaeb37c6c91220d228110f18571d8c3218edf868981b11250620cc9914a4b36",
+      "source_modified_utc": "2025-10-17T11:10:29.521953+00:00"
+    },
+    {
+      "path": "docs/original_project_context.md",
+      "source": "C:\\My_Project\\8_BALL_POOL\\AGENTS.md",
+      "bytes": 2544,
+      "sha256": "aa70bd3e205ddea34fde3c6fc469f9dcf719eea6b680a0bc1ff2c2c8246fc889",
+      "source_modified_utc": "2025-10-16T08:54:36.345699+00:00"
+    },
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_241_best.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output\\checkpoint_epoch_241_best.pth",
+      "bytes": 131471898,
+      "sha256": "7cb75a3a5897104165f550e96f6faa6071109474e9721f8327a84e73e5b3c223",
+      "source_modified_utc": "2025-10-17T04:10:12.889615+00:00"
+    },
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_247_best.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_ft\\checkpoint_epoch_247_best.pth",
+      "bytes": 131472602,
+      "sha256": "42e4d7a0f31bddb093f6e0dfa674c28dcf9fb52c37f5b723b3bef0e17cb9ac0f",
+      "source_modified_utc": "2025-10-17T13:42:59.148194+00:00"
+    },
+    {
+      "path": "cue_line_extension/checkpoints/checkpoint_epoch_250_final.pth",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output\\checkpoint_epoch_250_final.pth",
+      "bytes": 131472212,
+      "sha256": "612df0283775705e57875164f3109714c29d7daaeda4d1ef1c8d2f0b39227183",
+      "source_modified_utc": "2025-10-17T04:26:37.286908+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output\\metrics.jsonl",
+      "bytes": 37017,
+      "sha256": "f373be60899d790eda80bcc3d2886c1b1e81e20f87fd3f919bfc61ebf7530331",
+      "source_modified_utc": "2025-10-17T04:26:37.038575+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_ft/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_ft\\metrics.jsonl",
+      "bytes": 36525,
+      "sha256": "f06b45fe8f2087c674f920677f4489570cbf0856dbb42095a8a3f228ec039fdb",
+      "source_modified_utc": "2025-10-18T08:45:07.728805+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Best_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Best_Training\\metrics.jsonl",
+      "bytes": 35680,
+      "sha256": "f02e3fa6117991ec14035874956e34587355890670d74668289985503cb70fae",
+      "source_modified_utc": "2025-10-17T13:28:39.574905+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/First_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\First_Training\\metrics.jsonl",
+      "bytes": 2490,
+      "sha256": "97efde93617a1c8501844a66790ecaf9cbccd19c252d2b9edc6d361b384a1b51",
+      "source_modified_utc": "2025-10-05T21:51:20.024866+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Five_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Five_Training\\metrics.jsonl",
+      "bytes": 4147,
+      "sha256": "9dc739a89473ea0732b19f3c3094c12f3edca82c423e17454aa750c601818165",
+      "source_modified_utc": "2025-10-09T13:47:30.669187+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Four_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Four_Training\\metrics.jsonl",
+      "bytes": 36350,
+      "sha256": "2b3df2cd2e0826a4b4ff6ca3479ea19e4b5b13918336faa5992438fabc20213a",
+      "source_modified_utc": "2025-10-09T08:38:19.370394+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Second_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Second_Training\\metrics.jsonl",
+      "bytes": 5322,
+      "sha256": "e93979218e2bab5f3e3a205837b2227a0ad4786795e39d49b74b3b3e1b447b22",
+      "source_modified_utc": "2025-10-06T09:22:58.044203+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Sixth_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Sixth_Training\\metrics.jsonl",
+      "bytes": 46255,
+      "sha256": "231bc7097c974e4840b27a802ab0f9fa3a014af49ba410e6071fd501df1cceee",
+      "source_modified_utc": "2025-10-10T05:39:21.397249+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/output_prev/Third_Training/metrics.jsonl",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\output_prev\\Third_Training\\metrics.jsonl",
+      "bytes": 30552,
+      "sha256": "83459c1061c15e22be0cf35a1380576b3b430fcca9215d07a9996dd8f60622fc",
+      "source_modified_utc": "2025-10-07T00:16:58.885104+00:00"
+    },
+    {
+      "path": "cue_line_extension/training_history/review_log.txt",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\review_log.txt",
+      "bytes": 1540,
+      "sha256": "86bc401ec6104ce80ae5bbed53d7f2d8395a4ba6e58bf41176002869e58b7a7d",
+      "source_modified_utc": "2025-10-09T13:54:18.248483+00:00"
+    },
+    {
+      "path": "assets/original_frame.png",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\images\\capture_20251016_101020_000029.png",
+      "bytes": 1384181,
+      "sha256": "343f3c0e7c4782b2130774a900009879251d6d46a59586743c4db731f888dcd7",
+      "source_modified_utc": "2025-10-16T17:19:58.304344+00:00"
+    },
+    {
+      "path": "assets/manual_mask.png",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\masks\\capture_20251016_101020_000029.png",
+      "bytes": 11307,
+      "sha256": "f54229f7c385f99da5019777a1ad5e138a5fd5350f6555423da6f8b678a1efab",
+      "source_modified_utc": "2025-10-16T17:27:29.202046+00:00"
+    },
+    {
+      "path": "assets/manual_overlay.png",
+      "source": "C:\\My_Project\\8_BALL_POOL\\data\\overlays\\capture_20251016_101020_000029.png",
+      "bytes": 1280816,
+      "sha256": "6f1bc95805f3dce9e942b3fbff0559d12b73935991bf2e0ff6d3f80f1a60d57d",
+      "source_modified_utc": "2025-10-16T17:27:29.227686+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/__init__.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\__init__.py",
+      "bytes": 47,
+      "sha256": "b20fac51e07bcd64023c17211b750f8fc9d2fe41c3dc46725be3e7d852b4141f",
+      "source_modified_utc": "2026-03-24T21:21:48.497941+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/__init__.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\__init__.py",
+      "bytes": 44,
+      "sha256": "d219b5ed75f86d0329ebb594cd721ee763ec23db168a95432507c891b2c5c608",
+      "source_modified_utc": "2026-03-24T21:37:52.433751+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/color_recolor.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\color_recolor.py",
+      "bytes": 1236,
+      "sha256": "d909ac9bb2e6c228bac7c1dd00740b35f89d8d55e063487f47d95d3277e013d3",
+      "source_modified_utc": "2026-03-24T21:30:30.638191+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/crop_utils.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\crop_utils.py",
+      "bytes": 4973,
+      "sha256": "4bbb66688c2ddebcfbccac9c76b7afbbf66a90c045c5f01b194b1b5637b8369f",
+      "source_modified_utc": "2026-03-24T21:29:09.880058+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/debug_viz.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\debug_viz.py",
+      "bytes": 2477,
+      "sha256": "0771635470d0a915642fe409b2fb2f4914a8d287d59ff5f6fc82cb3a8a1da32a",
+      "source_modified_utc": "2026-03-24T21:30:30.638191+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/geometry.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\geometry.py",
+      "bytes": 3592,
+      "sha256": "a0b914a3dace3fce9731d3b2102c009da95e18827f710c791e02cafa6d4fa97a",
+      "source_modified_utc": "2026-03-24T21:46:05.865232+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/io_utils.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\io_utils.py",
+      "bytes": 6597,
+      "sha256": "7047aca644745e2825fedc115c11f647607d1b7fda4befef2d16257a74a18190",
+      "source_modified_utc": "2026-03-24T21:27:53.981263+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/mask_postprocess.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\mask_postprocess.py",
+      "bytes": 6270,
+      "sha256": "f0ec264954fa9d44f2ad22602faf527b13474e7155ffede6f7a80bf0ed2478f4",
+      "source_modified_utc": "2026-03-26T18:45:16.332270+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/pipeline/metrics.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\pipeline\\metrics.py",
+      "bytes": 4939,
+      "sha256": "cede06b946a8263f56d50c9550c215fe94020e7de0bf8e5e19600146ee9c9d80",
+      "source_modified_utc": "2026-03-26T19:34:54.754445+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/stages/__init__.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\stages\\__init__.py",
+      "bytes": 36,
+      "sha256": "322c7ffaa99e7aee75ddfb864bd7306ca3299bba12a9f0db9d69914729387c18",
+      "source_modified_utc": "2026-03-24T21:37:52.433751+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/stages/propose_ball_crops.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\stages\\propose_ball_crops.py",
+      "bytes": 23714,
+      "sha256": "8fde009769365f4f2cc11590c52cab425a6a26aa0ffc32f071422fc1612d5ecd",
+      "source_modified_utc": "2026-05-22T11:57:06.844094+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/__init__.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\__init__.py",
+      "bytes": 82,
+      "sha256": "deb3d8f84b3a12165a17863a55ae94a16ae213663ba0430a3a8a8d4c2c7fc4ea",
+      "source_modified_utc": "2026-03-27T00:58:54.101736+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/conditioned.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\conditioned.py",
+      "bytes": 3848,
+      "sha256": "23482f6a2d227fdeadee695e794625fae290053a477c28c37b11c33ae637852f",
+      "source_modified_utc": "2026-04-25T13:39:52.894906+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/conditioned_data.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\conditioned_data.py",
+      "bytes": 5593,
+      "sha256": "50b9b55717164e11b3280792d00a8a7a82961bfde50ab2d539b377040d3e4a88",
+      "source_modified_utc": "2026-04-26T00:22:49.103017+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/config.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\config.py",
+      "bytes": 1660,
+      "sha256": "e923682cdbe2c6ff6dc4dba4c435429dc7259840c586c4af6f85aa654ace5091",
+      "source_modified_utc": "2026-05-22T09:42:53.826705+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/data.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\data.py",
+      "bytes": 20228,
+      "sha256": "b541fd0a70826c2ff24517888bf8c69221441bf07e72102db44145afddb0d64e",
+      "source_modified_utc": "2026-05-22T09:43:54.077389+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\final_veto.py",
+      "bytes": 13292,
+      "sha256": "3a3443d87a02accc50033ba4c5899f2c20adba6cd6e5693b6de402bcd241c256",
+      "source_modified_utc": "2026-04-26T14:47:54.462710+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/image_final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\image_final_veto.py",
+      "bytes": 16113,
+      "sha256": "33759ba051eb1ec6f844ef6300647f87371d85f100560c1cbd7e1b854cc3d78e",
+      "source_modified_utc": "2026-04-28T18:48:53.805676+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/infer.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\infer.py",
+      "bytes": 156235,
+      "sha256": "e9563387616e301358f61c0fa7a4ecfc061f98bf772bbb5d5f6e1ceee8a6abc4",
+      "source_modified_utc": "2026-05-17T17:36:44.619689+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/manifest_inference.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\manifest_inference.py",
+      "bytes": 17042,
+      "sha256": "7b57c4c08ce879d977db96ba8705f6235185c4330b64abf7c7b559db64a1552a",
+      "source_modified_utc": "2026-05-17T17:36:51.231611+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/meta_selector.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\meta_selector.py",
+      "bytes": 12011,
+      "sha256": "8b46f475ca7433f8db470775348a918a8c6c89a671099659e7dba681f06424de",
+      "source_modified_utc": "2026-03-27T22:24:50.886294+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/model.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\model.py",
+      "bytes": 5385,
+      "sha256": "f6ae48e362b5e84fb2a0ca8629407f984cea288bea75cd661a7ce11176b32340",
+      "source_modified_utc": "2026-05-06T08:01:03.265791+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/reranker.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\reranker.py",
+      "bytes": 13082,
+      "sha256": "609b481c7ad516837420434d98b85864327fc27709764dd288ec0d5c63561bbb",
+      "source_modified_utc": "2026-03-27T17:42:18.233552+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/rescue_arbiter.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\rescue_arbiter.py",
+      "bytes": 14775,
+      "sha256": "c1ebb22c366acae2804ee8f84d1be9ead3be5166a09eaf576e26251ca7a8726c",
+      "source_modified_utc": "2026-05-07T17:58:13.102629+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/train.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\train.py",
+      "bytes": 15532,
+      "sha256": "c0ec41c359885d1e413f999ace5868b219f7c1b29a9e6bf37823e014b923c60c",
+      "source_modified_utc": "2026-05-22T09:44:16.959338+00:00"
+    },
+    {
+      "path": "object_ball_guideline/src/supervised/train_conditioned.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\src\\supervised\\train_conditioned.py",
+      "bytes": 12127,
+      "sha256": "d02dd388959c98bc953cdad0b2a836d6324bdfef28b8e09e62bbcd8cf930f014",
+      "source_modified_utc": "2026-04-26T00:22:49.104017+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/extract_video_frames_harvest.ps1",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\extract_video_frames_harvest.ps1",
+      "bytes": 1258,
+      "sha256": "d229235d68e67ecdfbfe12ef7317caabe2d079a199527f5e6b6888b797f75b23",
+      "source_modified_utc": "2026-04-24T06:40:02.686786+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/harvest_video_guideline_candidates.ps1",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\harvest_video_guideline_candidates.ps1",
+      "bytes": 4693,
+      "sha256": "9cda374e217d29874f1e226c790b32e964d10a335da4feec338d5979355d9094",
+      "source_modified_utc": "2026-04-24T14:07:35.052129+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/harvest_video_guideline_candidates_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\harvest_video_guideline_candidates_wsl.sh",
+      "bytes": 5020,
+      "sha256": "c3943a33cd741c8dc3106418894ab21320e27f9f99797763d4a64649a722c7a2",
+      "source_modified_utc": "2026-04-24T14:07:35.051130+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_overnight_harvest_repair_experiments_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_overnight_harvest_repair_experiments_wsl.sh",
+      "bytes": 1935,
+      "sha256": "7c108c060ad204774e074c7c3871c1ea6ae031beab5f8a68db499a0c3d275e3e",
+      "source_modified_utc": "2026-04-24T23:57:07.980007+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_overnight_harvest_repair_extension_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_overnight_harvest_repair_extension_wsl.sh",
+      "bytes": 2335,
+      "sha256": "8cfe76245f5abfea64f1d707f9fed072e387eae82350f742f289bff218f9891e",
+      "source_modified_utc": "2026-04-25T00:17:01.609633+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_supervised_best.ps1",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_supervised_best.ps1",
+      "bytes": 833,
+      "sha256": "91368ea5d5c3ecd53ddd7f814c1efc80bb5c69b1840310f5f638c3340f088987",
+      "source_modified_utc": "2026-03-28T22:51:48.101546+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_supervised_best_harvest.ps1",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_supervised_best_harvest.ps1",
+      "bytes": 849,
+      "sha256": "0bd8f9447ca80c2f7d46059d28c70029929ded067d56f2502054a61b7c587da0",
+      "source_modified_utc": "2026-04-24T10:18:23.925765+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_supervised_best_harvest_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_supervised_best_harvest_wsl.sh",
+      "bytes": 347,
+      "sha256": "0d7d8693cb8bb509673287d1f6cb0d8f9f29c15d328f81f5d31bc18d8411aea5",
+      "source_modified_utc": "2026-04-24T10:29:34.942174+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_supervised_best_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_supervised_best_wsl.sh",
+      "bytes": 32964,
+      "sha256": "872e1d460aae49de6ed73d2883f63b87be69873a1aa38d65316a2901518fdf2f",
+      "source_modified_utc": "2026-05-17T17:37:39.693069+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_tests.ps1",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_tests.ps1",
+      "bytes": 321,
+      "sha256": "c188022f42dc61ccb75855ca3091c1bb0134f47365aa65d7e3d7f4946c10c95c",
+      "source_modified_utc": "2026-03-24T22:23:44.629391+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_tests_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_tests_wsl.sh",
+      "bytes": 249,
+      "sha256": "9a4c604f2f4332b968e6be77b2a42c0885c95b52ee864f2a86763befca2336aa",
+      "source_modified_utc": "2026-03-24T22:23:44.629391+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/run_v11_conditioned_pipeline_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\run_v11_conditioned_pipeline_wsl.sh",
+      "bytes": 1474,
+      "sha256": "ffb355fea3810c8341544097afd984b44a1a3cea1052ae13fb8070d953fdc989",
+      "source_modified_utc": "2026-04-25T12:48:29.860129+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/train_conditioned_supervised_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\train_conditioned_supervised_wsl.sh",
+      "bytes": 1465,
+      "sha256": "14b8aace5c25c70cfae35c922de9cdb295d6b91f9e5b7f0d5c49b79f137f914b",
+      "source_modified_utc": "2026-04-26T00:23:12.611799+00:00"
+    },
+    {
+      "path": "object_ball_guideline/scripts/train_supervised_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\scripts\\train_supervised_wsl.sh",
+      "bytes": 842,
+      "sha256": "c60836a4bb35876228dcbd0883eb95ff49eb8574ced1166575f04d79fe322d6a",
+      "source_modified_utc": "2026-04-24T23:00:38.836534+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/audit_candidate_availability.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\audit_candidate_availability.py",
+      "bytes": 10549,
+      "sha256": "2aa27a957e62683d5d9996cd377f12cf80f283f5199ecd899d730486d9e87ca4",
+      "source_modified_utc": "2026-05-14T18:58:08.390511+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/audit_final_mask_context.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\audit_final_mask_context.py",
+      "bytes": 12435,
+      "sha256": "74b5a941ea944bab9bdd92a2e43d56d4d04f697d22e2e847ca713d2e44587449",
+      "source_modified_utc": "2026-04-27T13:58:09.318068+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_final_veto_dataset.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_final_veto_dataset.py",
+      "bytes": 2743,
+      "sha256": "66ba4705269f486ff61adb9786bc3f76259bc6b3c98c7cf7fade27d8e8d34f16",
+      "source_modified_utc": "2026-04-26T14:49:01.268586+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_final_veto_dataset_from_reports.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_final_veto_dataset_from_reports.py",
+      "bytes": 5227,
+      "sha256": "1e6262db9c4e7574dced2aa0bbb4e0ce37bb0d859d46dfe5ebe3b6332c52472b",
+      "source_modified_utc": "2026-04-26T19:44:49.792509+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_final_veto_train_board.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_final_veto_train_board.py",
+      "bytes": 3264,
+      "sha256": "538782cee0050fe4a57fdee738439158f89938896ea92e7e675bed1ef329c623",
+      "source_modified_utc": "2026-04-26T14:48:28.517103+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_focused_veto_board.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_focused_veto_board.py",
+      "bytes": 6843,
+      "sha256": "50fe89929689e1fec1570b9a3457977da4f601bf922a5d499bdc0663b6e43dcc",
+      "source_modified_utc": "2026-04-28T16:46:16.975043+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_gold_board.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_gold_board.py",
+      "bytes": 9328,
+      "sha256": "779e47e58dd659424e296d9ee59d6c771408806dda08f51ac2ca08b467bf908d",
+      "source_modified_utc": "2026-04-25T16:18:29.094169+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_image_final_veto_dataset.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_image_final_veto_dataset.py",
+      "bytes": 4617,
+      "sha256": "3475240d062e5efccd6dd9a6350e5f1f13673ed390df1e14d06f6959877b7da4",
+      "source_modified_utc": "2026-04-30T00:17:07.190390+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_reranker_dataset_from_checkpoint.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_reranker_dataset_from_checkpoint.py",
+      "bytes": 9929,
+      "sha256": "272fb81cfd3cd1f5b7387de6427b57a7dd68fb0e046b1187297fd1ec28a42965",
+      "source_modified_utc": "2026-05-06T09:29:57.565075+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_rescue_arbiter_dataset_from_diagnostics.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_rescue_arbiter_dataset_from_diagnostics.py",
+      "bytes": 4933,
+      "sha256": "807c112c692ae9560098f2816280d3a9fa8a9967dc669e4e47d2faa606cbb7fa",
+      "source_modified_utc": "2026-05-07T17:58:13.104624+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/build_residual_index_from_eval.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\build_residual_index_from_eval.py",
+      "bytes": 4829,
+      "sha256": "152b6692706fcbcd346b4f5b9db626a85003794e87b6b70993301ab4f2a2c067",
+      "source_modified_utc": "2026-03-28T13:48:40.341851+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/diagnose_guideline_failures.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\diagnose_guideline_failures.py",
+      "bytes": 29995,
+      "sha256": "8b0b450009b16df2c4539d8a59822e5096de1acafb5bb616a0e25e443c7bb116",
+      "source_modified_utc": "2026-05-17T17:36:59.442165+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/eval_best_manifest_split.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\eval_best_manifest_split.py",
+      "bytes": 23313,
+      "sha256": "86c59ab7003ebb5dc5086447aef9ff1f879309e97b566bf42c24df87254c0548",
+      "source_modified_utc": "2026-05-17T17:37:05.874196+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/eval_final_veto_summary.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\eval_final_veto_summary.py",
+      "bytes": 7344,
+      "sha256": "ba932983fbe65f88a1bf5d33d423ef2f6f5459800684bfb7163011dfe8d3c9be",
+      "source_modified_utc": "2026-04-26T19:46:46.015566+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/eval_gold_board_manifest.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\eval_gold_board_manifest.py",
+      "bytes": 11639,
+      "sha256": "fce0256f6d53305027f4b07c03b502463d02c7aea6bb06f316157e65f9aacc1d",
+      "source_modified_utc": "2026-05-22T13:21:37.971353+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/eval_image_final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\eval_image_final_veto.py",
+      "bytes": 6034,
+      "sha256": "fd1e76bc92148439dc1690ac801163478860014c14de37dd8fa70f259e687d01",
+      "source_modified_utc": "2026-04-28T18:49:05.603853+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/filter_guideline_harvest.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\filter_guideline_harvest.py",
+      "bytes": 4568,
+      "sha256": "581a3a488aafc817bddc920c8f2f947027cdca10e5a52c6fa79262b9f3888e7e",
+      "source_modified_utc": "2026-04-24T14:07:15.267561+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/harvest_common.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\harvest_common.py",
+      "bytes": 2616,
+      "sha256": "83d74a807deb3eb42ac43217ea2af021dd8e2f9dce601af1ca8d293ea25ad85e",
+      "source_modified_utc": "2026-05-06T17:55:04.347850+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/make_guideline_contact_sheet.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\make_guideline_contact_sheet.py",
+      "bytes": 3804,
+      "sha256": "70b5e742ed52a8dc837b0d328dd371524ce877f9b33c65168eba5de598eaf016",
+      "source_modified_utc": "2026-04-28T14:33:59.421720+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/run_supervised_best_harvest.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\run_supervised_best_harvest.py",
+      "bytes": 19266,
+      "sha256": "52f9a525ac9da6ff89167c7550b04da097f2e88996c4d7617054c9b2063213ba",
+      "source_modified_utc": "2026-05-08T15:21:16.638659+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/setup_supervised_train_wsl.sh",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\setup_supervised_train_wsl.sh",
+      "bytes": 1307,
+      "sha256": "817369ccdd69744dc4b63e51cee017bac3fcd0476bb26437a881a667bcb998ae",
+      "source_modified_utc": "2026-03-27T01:07:15.478703+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/train_final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\train_final_veto.py",
+      "bytes": 3356,
+      "sha256": "d22cd84cb2cd730229d112375f76c5470f8a3fe5d4d68763cbc10756c378afbd",
+      "source_modified_utc": "2026-04-26T14:49:40.394789+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/train_image_final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\train_image_final_veto.py",
+      "bytes": 4210,
+      "sha256": "f71414c74e187b3fec5220a5539a01ae327268c8bb3ab04d68f9d11b3495bd2b",
+      "source_modified_utc": "2026-04-28T18:48:59.108913+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tools/train_rescue_arbiter.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tools\\train_rescue_arbiter.py",
+      "bytes": 3377,
+      "sha256": "210d7261cf31d27f5455458444ad21cad16b1002969a197ffd6d06d4a4e00cca",
+      "source_modified_utc": "2026-05-07T17:58:13.105625+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_build_image_final_veto_dataset.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_build_image_final_veto_dataset.py",
+      "bytes": 1643,
+      "sha256": "a119ceaf0797c6dae55d5d0dd24898aba8b609c76f2f2a443191fb4ac4168186",
+      "source_modified_utc": "2026-04-30T00:17:24.392936+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_build_reranker_dataset_from_checkpoint.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_build_reranker_dataset_from_checkpoint.py",
+      "bytes": 3272,
+      "sha256": "2bcda3a20f92a628920c0a212578c925fa65dee905155b27d3070f14317bd9d2",
+      "source_modified_utc": "2026-05-06T09:30:23.547338+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_conditioned_supervised.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_conditioned_supervised.py",
+      "bytes": 3726,
+      "sha256": "e8c6c7cf7c60d19767dbe41994329cb4afa60d54ec7bc7e109cbe9ded03f4aa4",
+      "source_modified_utc": "2026-04-26T00:23:06.612102+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_crop_utils.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_crop_utils.py",
+      "bytes": 1224,
+      "sha256": "d758d95799e09364774cf5df55f96455c69597a5e328c01de03de5d1a7873ac4",
+      "source_modified_utc": "2026-03-24T21:40:24.423723+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_data.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_data.py",
+      "bytes": 8705,
+      "sha256": "0b9516bf2c660ae8916932ede73636ea6a571690f8cf4db2d3e8c9395fda7c61",
+      "source_modified_utc": "2026-05-22T09:44:35.037549+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_debug_viz.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_debug_viz.py",
+      "bytes": 497,
+      "sha256": "16a30c6fde1ac1af39f47d40db85e885e95eb61776839ab72f582b59b015f9bb",
+      "source_modified_utc": "2026-03-24T21:40:24.434800+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_diagnose_guideline_failures.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_diagnose_guideline_failures.py",
+      "bytes": 634,
+      "sha256": "a2b54c9f6b5ce18f65b4ffe3fa2353767fc9ac80448d768a5b769609720e3d33",
+      "source_modified_utc": "2026-04-30T06:47:28.799087+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_eval_gold_board_manifest.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_eval_gold_board_manifest.py",
+      "bytes": 2727,
+      "sha256": "b28723b6ad8a335d9836baf5b47dc4bf82c73d7b7505b032540862d907760c39",
+      "source_modified_utc": "2026-04-30T00:02:27.458608+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_final_veto.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_final_veto.py",
+      "bytes": 1795,
+      "sha256": "f7307e1070442d008bff8024e94c30afe9e8d17aaf3a25bedeb1ab146633e2bc",
+      "source_modified_utc": "2026-04-26T15:00:59.704426+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_gold_board.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_gold_board.py",
+      "bytes": 5252,
+      "sha256": "beb001184ef54c39a5b488853fb7041d1ed5e1d76e2d7c18f35bf22e9ab6b1dc",
+      "source_modified_utc": "2026-04-25T16:18:46.923868+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_guideline_diagnostics.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_guideline_diagnostics.py",
+      "bytes": 1720,
+      "sha256": "937fdb3c2cad5f6dd282ea0abadd1b535e28b14a3a4acec21de04b5ceaabb563",
+      "source_modified_utc": "2026-04-25T12:31:12.059552+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_harvest.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_harvest.py",
+      "bytes": 7897,
+      "sha256": "d040e86054f7c02778918c23d8926e7a4d3ff7007a671efba4413cf8b55617ac",
+      "source_modified_utc": "2026-05-08T15:21:51.077932+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_infer.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_infer.py",
+      "bytes": 34061,
+      "sha256": "53fe36b2f46145ac832ff00a3360722781ee713048a868a7b03bb773cbfa4719",
+      "source_modified_utc": "2026-05-17T17:38:04.711864+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_manifest_inference.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_manifest_inference.py",
+      "bytes": 4246,
+      "sha256": "1c85095de03163cba7f2018b30226f6803aa879715a5884cb1004cac3c44b37a",
+      "source_modified_utc": "2026-05-16T23:12:11.338586+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_mask_postprocess.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_mask_postprocess.py",
+      "bytes": 686,
+      "sha256": "4c3cb7ee3c0da03b8305e1a9cf5cf3b67d3671793a83d0cd4cad20b3a6fab1fc",
+      "source_modified_utc": "2026-03-24T21:40:24.434800+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_propose_ball_crops.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_propose_ball_crops.py",
+      "bytes": 5505,
+      "sha256": "ec1fbfc4ff9e1dd995195192172ef01852103a2c23881b21bdc477d928215f47",
+      "source_modified_utc": "2026-05-22T11:57:29.398033+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_remap.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_remap.py",
+      "bytes": 520,
+      "sha256": "0f64ce7d8e2b2206e6a6c7acee7e29b600553fe730c2e0c279feab38158dd59b",
+      "source_modified_utc": "2026-03-24T21:40:24.423723+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_rescue_arbiter.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_rescue_arbiter.py",
+      "bytes": 1689,
+      "sha256": "68c03e5b301b7216cd3186aea230cfaa0c1ad540331ebdb6d55d2d6a974be8fa",
+      "source_modified_utc": "2026-05-07T18:02:54.091971+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_train.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_train.py",
+      "bytes": 867,
+      "sha256": "0131f4a09243f96498f9d468b8336f377e99d07eab81297f084363a2573f94e7",
+      "source_modified_utc": "2026-04-26T00:19:46.559097+00:00"
+    },
+    {
+      "path": "object_ball_guideline/tests/test_train_conditioned.py",
+      "source": "C:\\My_Project\\Test_New_Approach\\tests\\test_train_conditioned.py",
+      "bytes": 1520,
+      "sha256": "c5f3f6479eda47b55b775f9954ab4d26db46e76f498dbd72b713b5b5eac8dd44",
+      "source_modified_utc": "2026-04-26T00:23:06.612102+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/experiments/DECISIONS.md",
+      "source": "C:\\My_Project\\Test_New_Approach\\docs\\experiments\\DECISIONS.md",
+      "bytes": 77754,
+      "sha256": "6165114d878c373aaa7d8705d28f27d11a0040eeca82f761625099a5c55c2a0b",
+      "source_modified_utc": "2026-05-22T17:09:35.219657+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/experiments/EXPERIMENT_LOG.md",
+      "source": "C:\\My_Project\\Test_New_Approach\\docs\\experiments\\EXPERIMENT_LOG.md",
+      "bytes": 200955,
+      "sha256": "13b387753808ce2c2c82bf26282e012651615d22b04efd8bcf4c6e6612d2bdc0",
+      "source_modified_utc": "2026-05-22T17:09:06.192857+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/experiments/HANDOFF.md",
+      "source": "C:\\My_Project\\Test_New_Approach\\docs\\experiments\\HANDOFF.md",
+      "bytes": 41446,
+      "sha256": "1daae81c52577a02aeddb8ba944e90e09d113622f5933d44c7a2455df09e013c",
+      "source_modified_utc": "2026-05-22T17:08:25.072177+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/experiments/supervised_target_line_progress.md",
+      "source": "C:\\My_Project\\Test_New_Approach\\docs\\experiments\\supervised_target_line_progress.md",
+      "bytes": 167998,
+      "sha256": "8bbcfe217cf7813618f0c197579e8e4bb9d9940b41ffd8ee3aa13a99f7a458dc",
+      "source_modified_utc": "2026-05-22T17:10:14.654502+00:00"
+    },
+    {
+      "path": "object_ball_guideline/AGENTS.md",
+      "source": "C:\\My_Project\\Test_New_Approach\\AGENTS.md",
+      "bytes": 13704,
+      "sha256": "acc0e53a36d62deb2b5654b7297bfda691982c5132baa3bc0fdb6ecb8dfc6689",
+      "source_modified_utc": "2026-04-25T18:30:13.874281+00:00"
+    },
+    {
+      "path": "object_ball_guideline/requirements.txt",
+      "source": "C:\\My_Project\\Test_New_Approach\\requirements.txt",
+      "bytes": 75,
+      "sha256": "76ccae8f147467590552cbd762f46a6b369014b1e93f2333d2ad830123497932",
+      "source_modified_utc": "2026-03-24T22:23:44.629391+00:00"
+    },
+    {
+      "path": "object_ball_guideline/requirements-train.txt",
+      "source": "C:\\My_Project\\Test_New_Approach\\requirements-train.txt",
+      "bytes": 105,
+      "sha256": "7b7d3c166cb1b0aad98fd0c3a18bb6e2125aa51ce4dbb17587a2c5fe4285371e",
+      "source_modified_utc": "2026-03-27T01:19:11.408008+00:00"
+    },
+    {
+      "path": "object_ball_guideline/requirements-dev.txt",
+      "source": "C:\\My_Project\\Test_New_Approach\\requirements-dev.txt",
+      "bytes": 32,
+      "sha256": "75dffe22ad6784a8fef95552bd76a908d1f437e538a324a5935310786528a05d",
+      "source_modified_utc": "2026-03-24T22:23:44.629391+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/historical_pyproject.toml",
+      "source": "C:\\My_Project\\Test_New_Approach\\pyproject.toml",
+      "bytes": 655,
+      "sha256": "68aa9f3ccf98470da962c3696cc7dd18b3ca2d9b8805c249701ba96fd3455ed5",
+      "source_modified_utc": "2026-03-24T21:21:48.492836+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_unet_best.pt",
+      "bytes": 31121507,
+      "sha256": "d91db0ee07bb93b33b24f7c811c28a5fae5273f9bbbb717c6b35f11f22659838",
+      "source_modified_utc": "2026-03-27T05:34:45.753861+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\history.json",
+      "bytes": 7014,
+      "sha256": "c8454bc534b81f2493cbfbf556db56fa5e0f66af848f5287a9aa84496dbf8ff3",
+      "source_modified_utc": "2026-03-27T05:37:33.819873+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_reranker_best.pt",
+      "bytes": 20309,
+      "sha256": "61354d244c782b46869b1bdf681fa9e10025783c62854b173dc19450a683a145",
+      "source_modified_utc": "2026-03-27T16:47:10.563271+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v2/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\history.json",
+      "bytes": 7014,
+      "sha256": "c8454bc534b81f2493cbfbf556db56fa5e0f66af848f5287a9aa84496dbf8ff3",
+      "source_modified_utc": "2026-03-27T05:37:33.819873+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/runs_cv/ft_after_clean2000_softdistance_v1/best.pt",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_after_clean2000_softdistance_v1\\best.pt",
+      "bytes": 101037059,
+      "sha256": "2e14de5a17c1d5a11f2566de4f6528abdcfd25c4d69debd1c90795bd8dceb0d0",
+      "source_modified_utc": "2026-03-06T16:36:02.032955+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/runs_cv/ft_balanced_ultratiny_replay_v1/best.pt",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_balanced_ultratiny_replay_v1\\best.pt",
+      "bytes": 101036995,
+      "sha256": "aef71fc970a8bce61419c3d6734aa6a437f4dc8dddb9aae40df4f16574f7c28b",
+      "source_modified_utc": "2026-03-04T12:24:50.878178+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_unet_best.pt",
+      "bytes": 31122531,
+      "sha256": "c66808f38deb8454e700fd452a5fdb2d029e6105dccd099ebedce129f90830cd",
+      "source_modified_utc": "2026-03-27T21:10:54.879898+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\history.json",
+      "bytes": 9831,
+      "sha256": "d4386debc3cf5856b9829f14d4d1148d81c03ffbbe8bbf23921cf66463d91962",
+      "source_modified_utc": "2026-03-27T21:14:07.709260+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_reranker_best.pt",
+      "bytes": 20437,
+      "sha256": "bf5573d9a03315a3d45df4a5b24af483999bf3def39380b675f1e48be7a3b06b",
+      "source_modified_utc": "2026-03-27T21:28:15.059455+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v5_negft/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\history.json",
+      "bytes": 9831,
+      "sha256": "d4386debc3cf5856b9829f14d4d1148d81c03ffbbe8bbf23921cf66463d91962",
+      "source_modified_utc": "2026-03-27T21:14:07.709260+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_unet_best.pt",
+      "bytes": 31125283,
+      "sha256": "3a923238fd07a175970baa2d23cc50da514d2078aef30db21020954d67d84811",
+      "source_modified_utc": "2026-03-28T14:26:28.543737+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\history.json",
+      "bytes": 16419,
+      "sha256": "a42c1950fa690c163248a2f8495438bb4e7f65e1b788a83517e1a40091ab0724",
+      "source_modified_utc": "2026-03-28T14:26:28.545737+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_reranker_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_reranker_best.pt",
+      "bytes": 20437,
+      "sha256": "8e1a3cd11d4a22bb6e39b7f229abcdd63501c61296da9e8721bf60f61d90a073",
+      "source_modified_utc": "2026-03-27T23:22:50.660876+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\history.json",
+      "bytes": 12646,
+      "sha256": "ad78ed975c9e3db02c37e40735e37cd3b1ef09305818261f76e9d5c789c586a7",
+      "source_modified_utc": "2026-03-27T23:08:21.729638+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/final_veto_v3_image_focus/image_veto_global_s42.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\final_veto_v3_image_focus\\image_veto_global_s42.pt",
+      "bytes": 1061220,
+      "sha256": "2af9f5f6397450038444ad0f4c2782892b2447f99be4e1885a19eb44e649267e",
+      "source_modified_utc": "2026-04-28T18:53:20.807586+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supplemental_v7_validation/image_veto_v4_external_reticle/image_veto_v4_global_s42.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supplemental_v7_validation\\image_veto_v4_external_reticle\\image_veto_v4_global_s42.pt",
+      "bytes": 1061419,
+      "sha256": "fa70cd5c6a4c6a1a8bdae40591e8cc9b02d6e11478b0217ae2b3d199581167f2",
+      "source_modified_utc": "2026-04-30T00:36:33.429623+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v10_repair_lr2e-4_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v10_repair_lr2e-4_pw18\\guideline_unet_best.pt",
+      "bytes": 31121507,
+      "sha256": "57eeaf4a69f1aac6fbe77e24f005b180b55e0016e0e3f3702ae36d0e3c803a5e",
+      "source_modified_utc": "2026-04-25T01:18:25.381368+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v10_repair_lr2e-4_pw18/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v10_repair_lr2e-4_pw18\\history.json",
+      "bytes": 8225,
+      "sha256": "e04c213d430347259307ba7b8dc039971bddfe8705959e35123814916a0bdcc5",
+      "source_modified_utc": "2026-04-25T01:42:46.394272+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_unet_best.pt",
+      "bytes": 31123491,
+      "sha256": "01c63acdfc44717fcedc77841b12c6ee1153c7c20b13a02c2cb026fe21689138",
+      "source_modified_utc": "2026-03-27T23:01:33.775789+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v6_residual/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\history.json",
+      "bytes": 12646,
+      "sha256": "ad78ed975c9e3db02c37e40735e37cd3b1ef09305818261f76e9d5c789c586a7",
+      "source_modified_utc": "2026-03-27T23:08:21.729638+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/guideline_reranker_b.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_reranker_b.pt",
+      "bytes": 20337,
+      "sha256": "4a8b8c0ec766c85b2859d6321d8fc465cdf17d5463929bce1b28ef4154027d39",
+      "source_modified_utc": "2026-03-28T14:54:53.213242+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v7_bestfinal5_residual/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\history.json",
+      "bytes": 16419,
+      "sha256": "a42c1950fa690c163248a2f8495438bb4e7f65e1b788a83517e1a40091ab0724",
+      "source_modified_utc": "2026-03-28T14:26:28.545737+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18\\guideline_unet_best.pt",
+      "bytes": 31119843,
+      "sha256": "cf04e8e2b7ffd5ae0433ea7743782282288c38ab7b7b1dddca3e2fdb337e74ed",
+      "source_modified_utc": "2026-04-30T08:38:59.716858+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18\\history.json",
+      "bytes": 1654,
+      "sha256": "14e031ca248eebc7a21457e4183cd61ebb2017471f8dc87006bc6cfc89f4b531",
+      "source_modified_utc": "2026-04-30T08:45:09.724363+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18\\guideline_unet_best.pt",
+      "bytes": 31150819,
+      "sha256": "3a7b7e98ba7fa3afa64b4c4fcfbcf159728c756ff4f616693f3daa8cc2f0f49f",
+      "source_modified_utc": "2026-05-06T07:31:50.116193+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18\\history.json",
+      "bytes": 1413,
+      "sha256": "f639c5bada1aea476de95e8db429e76eae69d72f8dbfb6b51112e0cd35d9ad8d",
+      "source_modified_utc": "2026-05-06T07:37:20.623737+00:00"
+    },
+    {
+      "path": "object_ball_guideline/docs/historical_supervised_best_manifest.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_best_manifest.json",
+      "bytes": 194609,
+      "sha256": "d6095b317a1ee91a07d20e3e5e7bad19fbc386fbcbbcffaeaea35d867b90b18a",
+      "source_modified_utc": "2026-05-22T17:06:41.949841+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx/guideline_unet_best.pt",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx\\guideline_unet_best.pt",
+      "bytes": 31120547,
+      "sha256": "229c641834497690113c0335c84227d7100d7354c59aac5e60a8ee264912adf6",
+      "source_modified_utc": "2026-05-22T11:34:25.121079+00:00"
+    },
+    {
+      "path": "object_ball_guideline/runs/supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx/history.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v46_seg_specialist_v10_512_lw3_nw1_abs02_lr5e-5_pw24_ctx\\history.json",
+      "bytes": 2810,
+      "sha256": "0779fd36ae1a34684378ecd8102e92ec81466c85772f434f2b17fc840f31e613",
+      "source_modified_utc": "2026-05-22T11:40:12.289840+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/cv_guideline_common.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\cv_guideline_common.py",
+      "bytes": 58702,
+      "sha256": "07d13b246f3860e5b75dc0be1aeae46a6759c06751421df16ddb0ab6aacf62e6",
+      "source_modified_utc": "2026-03-03T20:43:40.095851+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/mask_refinement.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\mask_refinement.py",
+      "bytes": 14499,
+      "sha256": "83732e0418de0ea3f58826dba00d77073bb32cfe94801c621f632b91b6d8393d",
+      "source_modified_utc": "2026-03-02T11:43:53.174295+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/train_cv_guideline.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\train_cv_guideline.py",
+      "bytes": 82587,
+      "sha256": "731ef3a1a7dcd3ef794030df58c7ed85327262501bc1f5fdb7614a9d1bb489a3",
+      "source_modified_utc": "2026-03-06T15:04:57.832595+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/infer_cv_guideline.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\infer_cv_guideline.py",
+      "bytes": 18180,
+      "sha256": "d7db255e8b909e01841eda7d2f1c75d9c6945f781d20de6083fdd40082f23e10",
+      "source_modified_utc": "2026-03-03T13:08:08.777740+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/eval_cv_guideline.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\eval_cv_guideline.py",
+      "bytes": 28603,
+      "sha256": "66a4602e608413839e4ec645ea8436e3909956c5dc71f9fce9873b3e81d3e685",
+      "source_modified_utc": "2026-03-03T13:07:35.250527+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/inference_runtime.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\inference_runtime.py",
+      "bytes": 21781,
+      "sha256": "52e6e4d57920e2ba97c5e3431bce686f459d546523c1757d39e7628f58739a99",
+      "source_modified_utc": "2026-03-03T13:19:52.099292+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/shared_runtime_postprocess.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\shared_runtime_postprocess.py",
+      "bytes": 8798,
+      "sha256": "1e48d83a71b2e9802608cfa3e64cab81c230452c36498c851f9910cc3d34d9e4",
+      "source_modified_utc": "2026-03-03T13:01:47.849978+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/extract_video_frames.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\extract_video_frames.py",
+      "bytes": 17607,
+      "sha256": "b264a79d2db5e7d32ba25de0755b931054f0cfa8687691972b442dbd99b0df49",
+      "source_modified_utc": "2026-04-24T06:39:32.054111+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/image_click_labeler.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\image_click_labeler.py",
+      "bytes": 103783,
+      "sha256": "20c863ef21d69bb5ef58491399f99e849ea0dab37fb29cb63cd16b647b13fb29",
+      "source_modified_utc": "2026-02-16T17:42:46.361979+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/review_dataset_triplets.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\review_dataset_triplets.py",
+      "bytes": 9901,
+      "sha256": "e1d0a092c6ef5107551b21cc24e0d156d305221eb696f1a717544d3673117e67",
+      "source_modified_utc": "2026-03-06T14:34:45.637945+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/review_extracted_frames.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\review_extracted_frames.py",
+      "bytes": 10548,
+      "sha256": "3c730e578d6bcded360deb3fcbee8de5d4f8dd18718118a2ab065eb2a4077d4d",
+      "source_modified_utc": "2026-03-29T22:25:15.110491+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/review_negative_images.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\review_negative_images.py",
+      "bytes": 8715,
+      "sha256": "0bed4798050acbd18d07aa30fd97d39f6a9df66b7e074b209b611e435ad593de",
+      "source_modified_utc": "2026-03-01T23:42:26.344688+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/rebuild_zoomprobe_manifest.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\rebuild_zoomprobe_manifest.py",
+      "bytes": 3892,
+      "sha256": "b94c7c4fc57bbb6426dd8e1a30268a01c0a38695fe273c2830484fe44dc6bd4b",
+      "source_modified_utc": "2026-03-01T18:49:50.011323+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/build_clean_mining_manifest.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\build_clean_mining_manifest.py",
+      "bytes": 4100,
+      "sha256": "1d55e175e954f8b40ba36a4ce1be1776e2da0471d257123da8be54efe820b8ab",
+      "source_modified_utc": "2026-03-04T14:01:46.013173+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/build_hardcase_replay_manifests.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\build_hardcase_replay_manifests.py",
+      "bytes": 7159,
+      "sha256": "72862fab07d5f70dc67ceec7f7ff3cf5219bca6ed9a8e9cedf132e8313bd4cb9",
+      "source_modified_utc": "2026-03-04T11:52:49.618943+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/build_repaired_positive_manifest.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\build_repaired_positive_manifest.py",
+      "bytes": 4986,
+      "sha256": "63364ca9475ebc690bbb472257c40812a4cf29e921c89b0aa39350442a5603f7",
+      "source_modified_utc": "2026-03-08T14:46:17.781759+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/build_subset_benchmarks.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\build_subset_benchmarks.py",
+      "bytes": 9909,
+      "sha256": "430b9916e34f8b736e3ed392aedc1d9182cd3d3c608cefc2c43dba26b7e77d41",
+      "source_modified_utc": "2026-03-04T11:23:21.844567+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/import_color_analysis_labels.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\import_color_analysis_labels.py",
+      "bytes": 6122,
+      "sha256": "13a495fa217c45716f9754f7a4a9fe80361a16c4c19b98a05395eb348fefcec0",
+      "source_modified_utc": "2026-02-15T23:41:11.047842+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/live_label_overlay.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\live_label_overlay.py",
+      "bytes": 32401,
+      "sha256": "b08961565bdc68ebd0e83f87f98aae3ba8605d276a9ced3b9c98cf5cafbd6b36",
+      "source_modified_utc": "2026-02-15T16:50:04.310368+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/review_infer_repairs.py",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\review_infer_repairs.py",
+      "bytes": 61401,
+      "sha256": "130ec6d11c76b5bfc9a4f49aec29d838181f0660970e5494a6de6253c9b08ca0",
+      "source_modified_utc": "2026-04-24T19:36:25.691831+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/README.md",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\README.md",
+      "bytes": 22053,
+      "sha256": "12baf317281ebe213c8ab487081aa2937691ab72d23038a7969d2a008074c2ce",
+      "source_modified_utc": "2026-02-19T13:42:58.313781+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/EXPERIMENT_LOG.md",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\EXPERIMENT_LOG.md",
+      "bytes": 42692,
+      "sha256": "7b1d4394ac24d68e5e0e3a7f96b7efa63fc83b1671311b39324f90113daeeed3",
+      "source_modified_utc": "2026-03-08T16:03:07.395738+00:00"
+    },
+    {
+      "path": "object_ball_guideline/external_guideline/RUNTIME_NOTES.md",
+      "source": "C:\\My_Project\\SAM_3\\guideline_line\\RUNTIME_NOTES.md",
+      "bytes": 2818,
+      "sha256": "42f2be0c303c089f2f57a2563296ecaa8397010112636f3b58be0bb89d42cfc5",
+      "source_modified_utc": "2026-03-02T18:39:16.990852+00:00"
+    },
+    {
+      "path": "object_ball_guideline/benchmark_records/eval_v47b_roi_expand_selector_probe_positive_zero4_summary.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\reranker_v16_primary_aug\\eval_v47b_roi_expand_selector_probe_positive_zero4_summary.json",
+      "bytes": 10492,
+      "sha256": "f51aa2ed7ad1a524fc90c2184e89678c0175506b795a8838b334f3fa9e4d8398",
+      "source_modified_utc": "2026-05-22T12:05:55.801718+00:00"
+    },
+    {
+      "path": "object_ball_guideline/benchmark_records/eval_v47b_roi_expand_selector_probe_supplemental_positives_derived_summary.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\reranker_v16_primary_aug\\eval_v47b_roi_expand_selector_probe_supplemental_positives_derived_summary.json",
+      "bytes": 881168,
+      "sha256": "73b3e818bc2e2133d5cbaee67b9ef44d69225c0db72ed060e1935c2d99b4bfde",
+      "source_modified_utc": "2026-05-22T17:04:50.063570+00:00"
+    },
+    {
+      "path": "object_ball_guideline/benchmark_records/eval_v47b_roi_expand_selector_probe_frozen_summary.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\reranker_v16_primary_aug\\eval_v47b_roi_expand_selector_probe_frozen_summary.json",
+      "bytes": 721656,
+      "sha256": "f8ec08d6a26f8fd02eea70b8308ebb42d385b83b47b89dfe40d80ea4acf58694",
+      "source_modified_utc": "2026-05-22T14:40:44.946158+00:00"
+    },
+    {
+      "path": "object_ball_guideline/benchmark_records/eval_v47b_roi_expand_selector_probe_supplemental_negatives_merged_summary.json",
+      "source": "C:\\My_Project\\Test_New_Approach\\runs\\reranker_v16_primary_aug\\eval_v47b_roi_expand_selector_probe_supplemental_negatives_merged_summary.json",
+      "bytes": 1286729,
+      "sha256": "3af66c95a17fd89df70aa04ef048ea49053f104549811370833449f767689584",
+      "source_modified_utc": "2026-05-22T17:04:50.055490+00:00"
+    }
+  ],
+  "manifest_path_replacements": {
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_unet_best.pt": "runs/supervised_train_v2/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v2\\guideline_reranker_best.pt": "runs/supervised_train_v2/guideline_reranker_best.pt",
+    "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_after_clean2000_softdistance_v1\\best.pt": "external_guideline/runs_cv/ft_after_clean2000_softdistance_v1/best.pt",
+    "C:\\My_Project\\SAM_3\\guideline_line\\runs_cv\\ft_balanced_ultratiny_replay_v1\\best.pt": "external_guideline/runs_cv/ft_balanced_ultratiny_replay_v1/best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_unet_best.pt": "runs/supervised_train_v5_negft/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v5_negft\\guideline_reranker_best.pt": "runs/supervised_train_v5_negft/guideline_reranker_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_unet_best.pt": "runs/supervised_train_v7_bestfinal5_residual/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_reranker_best.pt": "runs/supervised_train_v6_residual/guideline_reranker_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\final_veto_v3_image_focus\\image_veto_global_s42.pt": "runs/final_veto_v3_image_focus/image_veto_global_s42.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supplemental_v7_validation\\image_veto_v4_external_reticle\\image_veto_v4_global_s42.pt": "runs/supplemental_v7_validation/image_veto_v4_external_reticle/image_veto_v4_global_s42.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v10_repair_lr2e-4_pw18\\guideline_unet_best.pt": "runs/supervised_train_v10_repair_lr2e-4_pw18/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v6_residual\\guideline_unet_best.pt": "runs/supervised_train_v6_residual/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v7_bestfinal5_residual\\guideline_reranker_b.pt": "runs/supervised_train_v7_bestfinal5_residual/guideline_reranker_b.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18\\guideline_unet_best.pt": "runs/supervised_train_v14_thinline_repair_lw2_nw05_abs02_lr1e-4_pw18/guideline_unet_best.pt",
+    "C:\\My_Project\\Test_New_Approach\\runs\\supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18\\guideline_unet_best.pt": "runs/supervised_train_v18_thinline512_v7init_lw25_nw075_abs01_lr5e-5_pw18/guideline_unet_best.pt"
+  },
+  "portability_changes": [
+    "Checkpoint paths in the publication manifest are relative to object_ball_guideline/; policy values are preserved."
+  ],
+  "dataset_snapshot": {
+    "original_root_image_mask_overlay_triplets": 4666,
+    "full_training_dataset_bundled": false,
+    "example_sample": "capture_20251016_101020_000029.png"
+  }
+}

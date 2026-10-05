@@ -1,0 +1,41 @@
+[
+  {
+    "checkpoint": "checkpoint_epoch_241_best.pth",
+    "epoch": 241,
+    "strict_load": true,
+    "output_shape": [
+      512,
+      512
+    ],
+    "finite": true,
+    "device": "cuda",
+    "min_probability": 1.2374896029773708e-12,
+    "max_probability": 0.9999456405639648
+  },
+  {
+    "checkpoint": "checkpoint_epoch_247_best.pth",
+    "epoch": 247,
+    "strict_load": true,
+    "output_shape": [
+      512,
+      512
+    ],
+    "finite": true,
+    "device": "cuda",
+    "min_probability": 1.49249243606292e-12,
+    "max_probability": 0.9999595880508423
+  },
+  {
+    "checkpoint": "checkpoint_epoch_250_final.pth",
+    "epoch": 250,
+    "strict_load": true,
+    "output_shape": [
+      512,
+      512
+    ],
+    "finite": true,
+    "device": "cuda",
+    "min_probability": 1.7898230640633894e-12,
+    "max_probability": 0.999940037727356
+  }
+]

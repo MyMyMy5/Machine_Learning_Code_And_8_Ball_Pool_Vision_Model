@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+  <title id="title">8 Ball Pool Vision</title><desc id="desc">A stylized pool table and a short guideline extended into a long straight direction.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091b28"/><stop offset="1" stop-color="#132e38"/></linearGradient>
+    <linearGradient id="felt" x2="1" y2="1"><stop stop-color="#0e6354"/><stop offset="1" stop-color="#114539"/></linearGradient>
+    <radialGradient id="ball" cx=".3" cy=".25"><stop stop-color="#fff"/><stop offset="1" stop-color="#c1d8cf"/></radialGradient>
+  </defs>
+  <rect width="1440" height="440" rx="24" fill="url(#bg)"/>
+  <g fill="#52c6a5" opacity=".08"><circle cx="920" cy="-40" r="260"/><circle cx="1390" cy="400" r="320"/></g>
+  <text x="72" y="86" fill="#69d5b6" font-family="Segoe UI,Arial,sans-serif" font-size="16" letter-spacing="5">LOCAL MACHINE LEARNING · COMPUTER VISION</text>
+  <text x="69" y="158" fill="#f4f7f2" font-family="Segoe UI,Arial,sans-serif" font-size="61" font-weight="700">8 BALL POOL</text>
+  <text x="69" y="224" fill="#f4f7f2" font-family="Segoe UI,Arial,sans-serif" font-size="61" font-weight="700">VISION</text>
+  <text x="73" y="273" fill="#b7cac8" font-family="Segoe UI,Arial,sans-serif" font-size="24">Learn the guideline. Extend the direction.</text>
+  <rect x="73" y="323" width="164" height="40" rx="20" fill="#ffffff" fill-opacity=".07"/>
+  <text x="155" y="349" text-anchor="middle" fill="#ddeae5" font-family="Segoe UI,Arial,sans-serif" font-size="15">PIXELS → MASK</text>
+  <rect x="252" y="323" width="195" height="40" rx="20" fill="#ffffff" fill-opacity=".07"/>
+  <text x="349" y="349" text-anchor="middle" fill="#ddeae5" font-family="Segoe UI,Arial,sans-serif" font-size="15">MASK → GEOMETRY</text>
+  <g transform="translate(738 63)">
+    <rect width="626" height="318" rx="34" fill="#baa16b"/><rect x="12" y="12" width="602" height="294" rx="28" fill="#244036"/><rect x="29" y="28" width="568" height="262" rx="20" fill="url(#felt)"/>
+    <g fill="#081a1b"><circle cx="29" cy="29" r="20"/><circle cx="313" cy="24" r="18"/><circle cx="597" cy="29" r="20"/><circle cx="29" cy="290" r="20"/><circle cx="313" cy="294" r="18"/><circle cx="597" cy="290" r="20"/></g>
+    <path d="M65 265 L558 59" stroke="#7ce5c1" stroke-width="3" stroke-dasharray="9 8" opacity=".8"/>
+    <path d="M202 208 L242 191" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="196" cy="210" r="19" fill="url(#ball)"/>
+    <circle cx="349" cy="145" r="20" fill="#101819" stroke="#6a8b7e" stroke-width="1"/>
+    <circle cx="349" cy="145" r="10" fill="#ecf2eb"/><text x="349" y="150" text-anchor="middle" fill="#192c29" font-family="Arial,sans-serif" font-size="14" font-weight="700">8</text>
+    <circle cx="465" cy="230" r="18" fill="#ce9147"/><circle cx="122" cy="95" r="18" fill="#4586b3"/>
+  </g>
+</svg>
